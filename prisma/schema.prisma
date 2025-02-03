@@ -34,5 +34,6 @@ model Comment{
   user User @relation(fields: [userId], references: [id])
   videoId String @db.ObjectId
   video Video @relation(fields: [videoId], references: [id])
+  text String
 }
 
